@@ -1,0 +1,186 @@
+{% extends "layout.html" %}
+{% import "sections.html" as s %}
+
+
+{% block pageTitle %}
+Arco Generators Ltd
+{% endblock %}
+
+{% block beforeContent %}
+ 
+
+<a class="govuk-back-link" href="#" onclick="history.back(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-form-group">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+    <h1 class="govuk-heading-l">
+      My permits 
+    </h1>
+<p>View and manage your permits. You can can search by reference number or by entering a site location to show all permits in that area.</p>
+
+
+
+    <div class="govuk-form-group">
+      <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="event-name">
+          Search for a permit or list all by area
+        </label>
+      </h1>
+      <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
+      <a class="govuk-button" href="arco-permits-licences-warrington.html">Search</a>
+    </div>
+
+  </div>
+</div>
+
+<details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Status key
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+		<table class="govuk-table">
+		  <thead class="govuk-table__head">
+		    <tr class="govuk-table__row">
+		      <th class="govuk-table__header" scope="col"></th>
+		      <th class="govuk-table__header" scope="col"></th>
+		    </tr>
+		  </thead>
+		  <tbody class="govuk-table__body">        
+		    <tr class="govuk-table__row">
+		      <th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--turquoise">active</strong></th>
+		      <td class="govuk-table__cell">An active permit</td>
+		    </tr>
+        <tr class="govuk-table__row">
+		      <th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--yellow">applied</strong></th>
+		      <td class="govuk-table__cell">A permit application that has been received and is being reviewed</td>
+		    </tr>
+		    <tr class="govuk-table__row">
+		      <th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--red">expiring</strong></th>
+		      <td class="govuk-table__cell">A permit that is about to expire and requires your attention</td>
+		    </tr>
+        <tr class="govuk-table__row">
+		      <th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--grey">expired</strong></th>
+		      <td class="govuk-table__cell">A permit that has expired</td>
+		    </tr>
+      </tbody>
+		</table>
+  </div>
+</details>
+
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header app-custom-class" scope="col">Reference</th>
+      <th class="govuk-table__header app-custom-class" scope="col">Site</th>
+			<th class="govuk-table__header app-custom-class" scope="col">Legislation</th>
+      <th class="govuk-table__header app-custom-class" scope="col">Expiry</th>
+      <th class="govuk-table__header app-custom-class" scope="col">Status</th>
+      <th class="govuk-table__header app-custom-class" scope="col"></th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <colgroup>
+        <col span="" class="name">
+        <col>
+        <col span="" class="subject">
+    </colgroup>
+
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">SP3801PK</th>
+      <td class="govuk-table__cell">Bury generator 4</td>
+      <td class="govuk-table__cell">Environmental Permitting Regulation</td>
+      <td class="govuk-table__cell">11 July 2022</td>			
+			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">expiring</strong><strong class="govuk-tag govuk-tag--green">transferring</strong></td>
+      <td class="govuk-table__cell"><a href="permit-mcp-2warnings.html" class="govuk-link">View</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">GR4392TR</th>
+      <td class="govuk-table__cell">Warrington</td>
+      <td class="govuk-table__cell">Waste operation</td>			
+      <td class="govuk-table__cell">N/A</td>
+			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">applied</strong></td>			
+      <td class="govuk-table__cell"><a href=" #" class="govuk-link">View</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">BT8325RR</th>
+      <td class="govuk-table__cell">Warrington</td>
+      <td class="govuk-table__cell">Waste operation</td>
+      <td class="govuk-table__cell">N/A</td>
+			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--turquoise">active</strong></td>
+      <td class="govuk-table__cell"><a href=" #" class="govuk-link">View</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">KE3321NE</th>
+      <td class="govuk-table__cell">Warrington</td>
+      <td class="govuk-table__cell">Installation</td>
+      <td class="govuk-table__cell">1 November 2025</td>
+			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--turquoise">active</strong></td>			
+      <td class="govuk-table__cell"><a href=" #" class="govuk-link">View</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">GR4395ZW</th>
+      <td class="govuk-table__cell">Warrington</td>
+      <td class="govuk-table__cell">Waste operation</td>			
+      <td class="govuk-table__cell">12 July 2027</td>
+			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--turquoise">active</strong></td>			
+      <td class="govuk-table__cell"><a href=" #" class="govuk-link">View</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">BT83263YE</th>
+      <td class="govuk-table__cell">Liverpool</td>
+      <td class="govuk-table__cell">Waste operation</td>
+      <td class="govuk-table__cell">N/A</td>
+			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--turquoise">active</strong></td>
+      <td class="govuk-table__cell"><a href=" #" class="govuk-link">View</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">KE3325MM</th>
+      <td class="govuk-table__cell">Salford</td>
+      <td class="govuk-table__cell">Installation</td>
+      <td class="govuk-table__cell">14 August 2029</td>
+			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--turquoise">active</strong></td>			
+      <td class="govuk-table__cell"><a href=" #" class="govuk-link">View</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">PQ9832VR</th>
+      <td class="govuk-table__cell">Oxford</td>
+      <td class="govuk-table__cell">Specified Generator</td>
+      <td class="govuk-table__cell">14 August 2017</td>
+			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">expired</strong></td>
+      <td class="govuk-table__cell"><a href=" #" class="govuk-link">View</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">MC4022DD</th>
+      <td class="govuk-table__cell">Edinburgh</td>
+      <td class="govuk-table__cell">Medium Combustion Plant</td>
+      <td class="govuk-table__cell">1 December 2016</td>
+			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">expired</strong></td>
+      <td class="govuk-table__cell"><a href=" #" class="govuk-link">View</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="">1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">2</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">3</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">4</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">5</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<br>
+
+<p><a href="">Apply for a new permit</a></p>
+
+<p><a href="arco-dashboard.html">Return to your homepage</a></p>
+
+
+
+
+        </main>
+      </div>
+
+
+{% endblock %}
