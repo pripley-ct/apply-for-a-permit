@@ -1,0 +1,152 @@
+{% extends "layout.html" %}
+{% import "sections.html" as s %}
+
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+
+
+<a class="govuk-back-link" href="#" onclick="history.back(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row" id="arco-dashboard">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-l">
+      John O'Reilly
+    </h1>
+
+
+		<p>
+			Manage your permits,licences and permissions.</p>
+			<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+			<h1 class="govuk-heading-m">
+				Apply for a new permit
+			  </h1>
+		
+			<p>If you require any advice before making your application you can use our <a href="https://www.gov.uk/guidance/get-advice-before-you-apply-for-an-environmental-permit">pre application service</a> </p>
+		
+			<button class="govuk-button" data-module="govuk-button">
+				Apply
+			  </button>			
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+		<div class="govuk-se-dashboard-row">
+			<h1 class="govuk-heading-m">
+		    My permits & licences
+			</h1>
+			<br>
+			<details class="govuk-details">
+				<summary class="govuk-details__summary">
+				  <span class="govuk-details__summary-text">
+					Status key
+				  </span>
+				</summary>
+				<div class="govuk-details__text">
+					  <table class="govuk-table">
+						<thead class="govuk-table__head">
+						  <tr class="govuk-table__row">
+							<th class="govuk-table__header" scope="col"></th>
+							<th class="govuk-table__header" scope="col"></th>
+						  </tr>
+						</thead>
+						<tbody class="govuk-table__body">        
+						  <tr class="govuk-table__row">
+							<th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--turquoise">active</strong></th>
+							<td class="govuk-table__cell">An active permit or licence</td>
+						  </tr>
+					  <tr class="govuk-table__row">
+							<th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--yellow">apply</strong></th>
+							<td class="govuk-table__cell">A permit or licence that is in the application process</td>
+						  </tr>
+						  <tr class="govuk-table__row">
+							<th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--red">expiring</strong></th>
+							<td class="govuk-table__cell">A permit or licence that is about to expire and requires your attention</td>
+						  </tr>
+					  <tr class="govuk-table__row">
+							<th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--grey">expired</strong></th>
+							<td class="govuk-table__cell">A permit or licence that has expired</td>
+						  </tr>
+					</tbody>
+					  </table>
+				</div>
+			  </details>
+			  
+			  
+			  <table class="govuk-table">
+				<thead class="govuk-table__head">
+				  <tr class="govuk-table__row">
+					<th class="govuk-table__header app-custom-class" scope="col">Name</th>
+					<th class="govuk-table__header app-custom-class" scope="col">Site</th>
+						  <th class="govuk-table__header app-custom-class" scope="col">Legislation</th>
+					<th class="govuk-table__header app-custom-class" scope="col">Expiry</th>
+					<th class="govuk-table__header app-custom-class" scope="col">Status</th>
+					<th class="govuk-table__header app-custom-class" scope="col"></th>
+				  </tr>
+				</thead>
+				<tbody class="govuk-table__body">
+				  <colgroup>
+					  <col span="" class="name">
+					  <col>
+					  <col span="" class="subject">
+				  </colgroup>
+			  
+				  <tr class="govuk-table__row">
+					<th class="govuk-table__header" scope="row">BT8325RR</th>
+					<td class="govuk-table__cell">Warrington</td>
+					<td class="govuk-table__cell">Waste operation</td>
+					<td class="govuk-table__cell">N/A</td>
+						  <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--turquoise">active</strong></td>
+					<td class="govuk-table__cell"><a href=" #" class="govuk-link">View</a></td>
+				  </tr>
+
+
+				</tbody>
+			  </table>
+		</div>
+
+
+
+
+		<div class="govuk-se-dashboard-row">
+			<div class="govuk-se-dashboard--heading">
+				<h1 class="govuk-heading-m">Manage my account</h1>
+			</div>
+			<br>
+			<div class="govuk-se-dashboard--info">
+				<p>Tell us about a change to your details or close your account. 
+					<br>
+					<br>
+					<a href="#" class="govuk-link">View account</a></p>
+			</div>
+		</div>
+
+
+
+
+		<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+		<a href="#" class="govuk-!-font-weight-bold govuk-!-font-size-18">Environmental permits: detailed information</a>
+		<hr class="govuk-section-break govuk-section-break--m">
+	
+		<a href="#" class="govuk-!-font-weight-bold govuk-!-font-size-18">Get advice before you apply for an environmental permit</a>
+		<hr class="govuk-section-break govuk-section-break--m">
+	
+		<a href="#" class="govuk-!-font-weight-bold govuk-!-font-size-18">Get help and support</a>
+		<hr class="govuk-section-break govuk-section-break--m">
+	
+		<a href="#" class="govuk-!-font-weight-bold govuk-!-font-size-18">Give feedback on this service</a>
+	   
+
+
+
+
+
+
+  </div>
+</div>
+{% endblock %}
