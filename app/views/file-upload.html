@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% import "sections.html" as s %}
+
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+
+
+<a class="govuk-back-link" href="#" onclick="history.back(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" id="arco-dashboard">
+	<div class="govuk-grid-column-full">
+	  <h1 class="govuk-heading-l">
+		  Select a file to upload
+	  </h1>
+  
+	<p>The selected file must be a JPG, BMP, PNG, TIF or PDF and under 50mb in size.</p>
+  
+  
+	<div class="govuk-form-group">
+	  <label class="govuk-label" for="file-upload-1">
+	    Upload a file
+	  </label>
+	  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+	</div>
+	
+		<a class="govuk-button" data-module="govuk-button" href="">Continue</a>
+		  
+		
+	  
+	</div>
+  </div>
+{% endblock %}
