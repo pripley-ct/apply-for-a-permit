@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+{% import "sections.html" as s %}
+
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+
+
+<a class="govuk-back-link" href="#" onclick="history.back(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" id="arco-dashboard">
+	<div class="govuk-grid-column-two-thirds">
+	  <h1 class="govuk-heading-l">
+		 Who is the technically competent manager?
+	  </h1>
+ 
+ 
+ 
+  
+<p>Please provide the environmental permit number/s and site address for all other waste activities that the proposed 
+	technically competent manager provides technical competence for, including permits held by other operators. </p>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="full-name">
+    Full name
+  </label>
+  <input class="govuk-input" id="full-name" name="full-name" type="text" spellcheck="false" autocomplete="name">
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="telephone-number">
+    UK telephone number
+  </label>
+  <input class="govuk-input govuk-input--width-20" id="telephone-number" name="telephone-number" type="tel" autocomplete="tel">
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="email">
+    Email address
+  </label>
+  <div id="email-hint" class="govuk-hint">
+    We’ll only use this to deal with your permit transfer
+  </div>
+  <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+</div>
+
+<fieldset class="govuk-fieldset">
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-line-1">
+      Permit number
+    </label>
+    <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1">
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-line-2">
+      Site address 
+    </label>
+    <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-town">
+      Town or city
+    </label>
+    <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2">
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-county">
+      County (optional)
+    </label>
+    <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-postcode">
+      Postcode
+    </label>
+    <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code">
+  </div>
+
+</fieldset>
+
+<p><a href="#" class="govuk-link">Add another address</a></p>
+
+
+				<a class="govuk-button" data-module="govuk-button" href="finances">Continue</a>
+	  
+	</div>
+  </div>
+{% endblock %}

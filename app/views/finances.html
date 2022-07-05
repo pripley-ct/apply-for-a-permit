@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% import "sections.html" as s %}
+
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+
+
+<a class="govuk-back-link" href="#" onclick="history.back(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" id="arco-dashboard">
+	<div class="govuk-grid-column-two-thirds">
+	  <h1 class="govuk-heading-l">
+		 Finances
+	  </h1>
+  
+<p><strong>Please note that if you knowingly or carelessly make a statement that is false or misleading to help you get an environmental permit
+(for yourself or anyone else), you may be committing an offence under the Environmental Permitting (England and Wales) Regulations
+2016.</strong>
+<br><br>
+
+Do you or any relevant person or a company in which you were a relevant person have current or past bankruptcy or insolvency
+proceedings against you? </p>
+
+
+<div class="govuk-form-group">
+
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+        <label class="govuk-label govuk-radios__label" for="sign-in">
+          No
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+        <label class="govuk-label govuk-radios__label" for="sign-in-2">
+          Yes
+        </label>
+        <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+          You can give details in the next step
+        </div>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+
+
+		<a class="govuk-button" data-module="govuk-button" href="management-systems">Continue</a>
+		  
+
+
+		
+	  
+	</div>
+  </div>
+{% endblock %}

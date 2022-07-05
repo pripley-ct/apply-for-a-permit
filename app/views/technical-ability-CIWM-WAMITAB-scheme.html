@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% import "sections.html" as s %}
+
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+
+
+<a class="govuk-back-link" href="#" onclick="history.back(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" id="arco-dashboard">
+	<div class="govuk-grid-column-two-thirds">
+	  <h1 class="govuk-heading-l">
+		 CIWM / WAMITAB scheme
+	  </h1>
+  
+<p>Please upload <strong>one</strong> of the following:</p>
+
+<ul class="govuk-list govuk-list--bullet">
+  <li>The relevant qualification certificate/s</li>
+  <li>Evidence of deemed competence</li>
+  <li>Environment Agency assessment</li>
+  <li>Evidence of nominated manager status under the transitional provisions for previously exempt activities <strong>and</strong>, 
+		if deemed competent or Agency‐assessed, or nominated manager, or if the original qualification is over two years old a copy of the relevant current continuing competence certificate/s</li>	
+</ul>
+
+<div class="govuk-grid-row" id="arco-dashboard">
+	<div class="govuk-grid-column-full">
+	  <h1 class="govuk-heading-m">
+		  Select a file to upload
+	  </h1>
+  
+	<p>The selected file must be a JPG, BMP, PNG, TIF or PDF and under 50mb in size.</p>
+  
+  
+	<div class="govuk-form-group">
+	  <label class="govuk-label" for="file-upload-1">
+	    Upload a file
+	  </label>
+	  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+	</div>
+
+<br>
+
+
+		<div class="govuk-button-group">
+		<a class="govuk-button" data-module="govuk-button" href="technically-competent-manager">Continue</a>
+		 <a href="technically-competent-manager" class="govuk-link">Skip and post to us instead</a>
+			</div>
+
+
+		
+	  
+	</div>
+  </div>
+{% endblock %}
