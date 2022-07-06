@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% import "sections.html" as s %}
+
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+
+
+<a class="govuk-back-link" href="#" onclick="history.back(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" id="arco-dashboard">
+	<div class="govuk-grid-column-two-thirds">
+	  <h1 class="govuk-heading-l">
+		 Management systems
+	  </h1>
+  
+<p><strong>You must have an effective, written management system in place that identifies and reduces 
+	the risk of pollution. You may show this by using a certified scheme or your own system.</strong>
+<br><br>
+
+Your permit requires you (as the operator) to ensure that you manage and operate your activities 
+in accordance with a written management system. 
+<br><br>
+View <a href="www.gov.uk/government/organisations/environment‐agency" class="govuk-link">guidance on management systems</a>.</p>
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
+        <label class="govuk-label govuk-checkboxes__label" for="nationality">
+					Tick this box to confirm that you have read the guidance and that
+					your management system will meet our requirements
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+
+
+		<a class="govuk-button" data-module="govuk-button" href="management-systems-provide">Continue</a>
+		  
+
+
+		
+	  
+	</div>
+  </div>
+{% endblock %}
