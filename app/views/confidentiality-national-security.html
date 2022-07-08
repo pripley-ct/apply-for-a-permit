@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% import "sections.html" as s %}
+
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+
+
+<a class="govuk-back-link" href="#" onclick="history.back(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" id="arco-dashboard">
+	<div class="govuk-grid-column-two-thirds">
+	  <h1 class="govuk-heading-l">
+		 Confidentiality and national security
+	  </h1>
+ 
+ <h1 class="govuk-heading-s">
+ Confidentiality
+ </h1>
+
+  
+	<p>We will normally put all the information in your application on a public register of environmental information. However, we may not include certain information in the public register if this is in the interests of national security, or because the information is confidential.
+<br><br>
+You can ask for information to be made confidential by enclosing a letter with your application giving your reasons. 
+If we agree with your request, we will tell you and not include the information in the public register. If we do not 
+agree with your request, we will let you know
+how to appeal against our decision, or you can withdraw your application. You can find guidance on confidentiality in 
+<a href="www.gov.uk/government/organisations/environment‐agency" class="govuk-link">Environmental permitting guidance: core guidance</a>, published by Defra. 
+<br><br>
+
+</p>
+	
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
+        <label class="govuk-label govuk-checkboxes__label" for="nationality">
+					Please treat the information in my application as confidential.<br>
+					<strong>Only tick this box if you wish to claim confidentiality for your application</strong>
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+
+
+
+<br>
+
+
+		<div class="govuk-button-group">
+		<a class="govuk-button" data-module="govuk-button" href="confidentiality-national-security2">Continue</a>
+			</div>
+
+
+		
+	  
+	</div>
+  </div>
+{% endblock %}

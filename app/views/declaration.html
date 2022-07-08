@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+{% import "sections.html" as s %}
+
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+
+
+<a class="govuk-back-link" href="#" onclick="history.back(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" id="arco-dashboard">
+	<div class="govuk-grid-column-two-thirds">
+	  <h1 class="govuk-heading-l">
+		 Declaration
+	  </h1>
+
+
+  
+	<p><strong>If you knowingly or carelessly make a statement that is false or misleading to help you get an environmental permit (for yourself or anyone else), you may be committing an offence under the Environmental Permitting (England and Wales) Regulations 2016.
+		<br><br>
+A relevant person should make the declaration (see the <a href="" class="govuk-link">guidance notes</a>). An agent acting on behalf of an applicant is NOT a relevant person.
+<br><br></strong>
+Each individual (or individual trustee) who is applying for their name to appear on the permit must complete this declaration. You will have to print a separate copy of this page for each additional individual to complete.
+<br><br>
+<strong>If you are transferring all or part of your permit, both you and the person receiving the permit must make the declaration. You must fill in the declaration directly below; the person receiving the permit must fill in the declaration under the heading ‘For transfers only’.
+<br><br>
+Note: we will issue a letter to both current and new holders to confirm the transfer. If you are changing address we will need to send this letter to your new address; therefore please tell us your new address in a separate letter.
+<br><br>
+If you are unable to trace one or more of the current permit holders please see below under the transfers declaration.
+<br><br>
+I declare that the information in this application is true to the best of my knowledge and belief. I understand that this application may be refused or approval withdrawn if I give false or incomplete information.
+</strong><br><br>
+If you deliberately make a statement that is false or misleading in order to get approval you may be prosecuted.
+<br><br>
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+
+    <div id="contact-hint" class="govuk-hint">
+      Select all that apply.
+    </div>
+    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email" data-aria-controls="conditional-contact">
+        <label class="govuk-label govuk-checkboxes__label" for="contact">
+          I confirm that my standard facility will fully meet the rules that I have applied for (this only applies if the application includes standard facilities)
+        </label>
+      </div>
+
+
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone" data-aria-controls="conditional-contact-2">
+        <label class="govuk-label govuk-checkboxes__label" for="contact-2">
+          Tick this box to confirm that you understand and agree with the declaration above, then fill in the details in the next page (you do not have to provide a signature as well)
+        </label>
+      </div>
+
+
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="contact-3" name="contact" type="checkbox" value="text message" data-aria-controls="conditional-contact-3">
+        <label class="govuk-label govuk-checkboxes__label" for="contact-3">
+          Tick this box if you do not want us to use information from any ecological survey that you have supplied with your application (for further information please see the guidance notes on part F1)
+        </label>
+      </div>
+
+  </fieldset>
+</div>
+</p>
+
+
+		<div class="govuk-button-group">
+		<a class="govuk-button" data-module="govuk-button" href="declaration2">Continue to part 2</a>
+			</div>
+
+
+		
+	  
+	</div>
+  </div>
+{% endblock %}

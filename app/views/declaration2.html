@@ -1,0 +1,123 @@
+{% extends "layout.html" %}
+{% import "sections.html" as s %}
+
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+
+
+<a class="govuk-back-link" href="#" onclick="history.back(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" id="arco-dashboard">
+	<div class="govuk-grid-column-two-thirds">
+	  <h1 class="govuk-heading-l">
+		 Declaration, part 2
+	  </h1>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="full-name">
+    Full name
+  </label>
+  <input class="govuk-input" id="full-name" name="full-name" type="text" spellcheck="false" autocomplete="name">
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="email">
+    On behalf of
+  </label>
+  <div id="email-hint" class="govuk-hint">
+    (if relevant; for example, in a company or organisation and so on)
+  </div>
+  <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="email">
+    Position 
+  </label>
+  <div id="email-hint" class="govuk-hint">
+    (if relevant; for example, in a company or organisation and so on)
+  </div>
+  <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+</div>
+
+ <h1 class="govuk-heading-s">
+Declaration for person receiving the permit
+ </h1>
+  
+	<p><strong>
+
+A relevant person should make the declaration (see the <a href="" class="govuk-link">guidance notes</a>). An agent acting on behalf of an applicant is NOT a relevant person.
+<br><br>
+I declare that the information in this application to transfer an environmental permit to me is true to the best of my knowledge and belief. I understand that this application may be refused or approval withdrawn if I give false or incomplete information.
+<br><br>
+Note: If you cannot trace a person or persons holding the permit you may be able to transfer the permit without their declaration as above. Please contact us to discuss this and supply evidence in your application to confirm you are unable to trace one or all of the
+permit holders.
+<br><br></strong>
+If you deliberately make a statement that is false or misleading in order to get approval you may be prosecuted.
+
+
+</strong>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+
+    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email" data-aria-controls="conditional-contact">
+        <label class="govuk-label govuk-checkboxes__label" for="contact">
+					Tick this box to confirm that you understand and agree with the declaration above, then fill in the details below
+					(you do not have to provide a signature as well)
+        </label>
+      </div>
+
+  </fieldset>
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="full-name">
+    Full name
+  </label>
+  <input class="govuk-input" id="full-name" name="full-name" type="text" spellcheck="false" autocomplete="name">
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="email">
+    On behalf of
+  </label>
+  <div id="email-hint" class="govuk-hint">
+    (if relevant; for example, in a company or organisation and so on)
+  </div>
+  <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="email">
+    Position 
+  </label>
+  <div id="email-hint" class="govuk-hint">
+    (if relevant; for example, in a company or organisation and so on)
+  </div>
+  <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+</div>
+
+</p>
+
+
+		<div class="govuk-button-group">
+		<a class="govuk-button" data-module="govuk-button" href="checklist">Continue</a>
+			</div>
+
+
+		
+	  
+	</div>
+  </div>
+{% endblock %}
