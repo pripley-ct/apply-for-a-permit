@@ -22,7 +22,9 @@
       View the progress of permit application MCP543XP
     </h1>
 
-
+<p>Your application is being processed. 
+	<br>	<br>
+	For estimated timescales permit officers are working to see <a href="" class="govuk-link">guidance on permit processing times</a>.</p>
 
     <div id="step-by-step-navigation" class="app-step-nav app-step-nav--large app-step-nav--active" data-show-text="Show" data-hide-text="Hide" data-show-all-text="Show all" data-hide-all-text="Hide all">
       <ol class="app-step-nav__steps">
@@ -41,7 +43,14 @@
                 Received
               </span>
             </h2>
-						<p>An application has been submitted to the Environment Agency </p>
+				    <tr class="govuk-table__row">
+				      <td class="govuk-table__cell">
+				        <strong class="govuk-tag govuk-tag--green">
+				  				completed
+								</strong>
+				      </td>
+				    </tr>
+						<p>Your application has been submitted to the Environment Agency </p>
           </div>
 
           <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-check-youre-allowed-to-drive-1">
@@ -77,7 +86,14 @@
                 Duly Making
               </span>
             </h2>
-						<p>The application is currently being reviewed by a permitting officer to carry out the Environment Agency's duly making checks </p>
+				    <tr class="govuk-table__row">
+				      <td class="govuk-table__cell">
+				        <strong class="govuk-tag govuk-tag--green">
+				  				completed
+								</strong>
+				      </td>
+				    </tr>
+						<p>The application has been reviewed by a permitting officer who has carried out the Environment Agency's duly making checks </p>
           </div>
 
           <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-get-a-provisional-licence-2">
@@ -93,10 +109,10 @@
         <li class="app-step-nav__step js-step" id="driving-lessons-and-practice" >
           <div class="app-step-nav__header js-toggle-panel" data-position="3">
             <h2 class="app-step-nav__title">
-              <span class="app-step-nav__circle app-step-nav__circle--number">
+              <span class="app-step-nav__circle app-step-nav__circle--number" style="background-color:black">
                 <span class="app-step-nav__circle-inner">
-                  <span class="app-step-nav__circle-background">
-                    <span class="govuk-visually-hidden">Step</span> 3
+                  <span class="app-step-nav__circle-background" style="color:white;text-shadow:none">
+                    <span class="govuk-visually-hidden">Step</span>  3
                   </span>
                 </span>
               </span>
@@ -105,6 +121,13 @@
                 Determination
               </span>
             </h2>
+						    <tr class="govuk-table__row">
+						      <td class="govuk-table__cell">
+						        <strong class="govuk-tag govuk-tag--blue">
+						  				Pending - 3 weeks elapsed
+										</strong>
+						      </td>
+						    </tr>
 						<p>The application is being assessed and determined by a permit officer </p>
           </div>
 
@@ -143,10 +166,16 @@
               </span>
 
               <span class="js-step-title">
-                Awaiting Sign-Off
+                Awaiting Sign-off
               </span>
             </h2>
-						<p>The application is being assessed and determined by a permit officer  </p>
+				    <tr class="govuk-table__row">
+				      <td class="govuk-table__cell">
+				        <strong class="govuk-tag govuk-tag--grey">
+				  				to do
+								</strong>
+				      </td>
+				    </tr>
           </div>
 
           <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-book-and-manage-your-theory-test-5">
@@ -173,8 +202,10 @@
 
         </li>
 
-        <li class="app-step-nav__step js-step" id="book-and-manage-your-driving-test" >
-          <div class="app-step-nav__header js-toggle-panel" data-position="6">
+
+
+        <li class="app-step-nav__step js-step" id="when-you-pass" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="7">
             <h2 class="app-step-nav__title">
               <span class="app-step-nav__circle app-step-nav__circle--number">
                 <span class="app-step-nav__circle-inner">
@@ -185,53 +216,16 @@
               </span>
 
               <span class="js-step-title">
-                Signed-Off
-              </span>
-            </h2>
-						<p>The application outcome has been approved - we will contact you with documentation </p>
-          </div>
-
-          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-book-and-manage-your-driving-test-6">
-            <p class="app-step-nav__paragraph">You must pass your theory test before you can book your driving test.</p>
-
-            <ol class="app-step-nav__list " data-length="5">
-              <li class="app-step-nav__list-item js-list-item ">
-                <a data-position="6.1" class="app-step-nav__link js-link" href="#">Book your driving test <span class="app-step-nav__context">£62 to £75</span></a>
-                </a>
-              </li>
-              <li class="app-step-nav__list-item js-list-item ">
-                <a data-position="6.2" class="app-step-nav__link js-link" href="#">What to take to your test </a>
-              </li>
-              <li class="app-step-nav__list-item js-list-item ">
-                <a data-position="6.3" class="app-step-nav__link js-link" href="#">Change your driving test appointment </a>
-              </li>
-              <li class="app-step-nav__list-item js-list-item ">
-                <a data-position="6.4" class="app-step-nav__link js-link" href="#">Check your driving test appointment details </a>
-              </li>
-              <li class="app-step-nav__list-item js-list-item ">
-                <a data-position="6.5" class="app-step-nav__link js-link" href="#">Cancel your driving test </a>
-              </li>
-            </ol>
-          </div>
-
-        </li>
-
-        <li class="app-step-nav__step js-step" id="when-you-pass" >
-          <div class="app-step-nav__header js-toggle-panel" data-position="7">
-            <h2 class="app-step-nav__title">
-              <span class="app-step-nav__circle app-step-nav__circle--number" style="background-color:black">
-                <span class="app-step-nav__circle-inner">
-                  <span class="app-step-nav__circle-background" style="color:white;text-shadow:none">
-                    <span class="govuk-visually-hidden">Step</span> 6
-                  </span>
-                </span>
-              </span>
-
-              <span class="js-step-title">
                 Outcome
               </span>
             </h2>
-						<p>The application was accepted and the permit has been granted </p>
+				    <tr class="govuk-table__row">
+				      <td class="govuk-table__cell">
+				        <strong class="govuk-tag govuk-tag--grey">
+				  				to do
+								</strong>
+				      </td>
+				    </tr>
           </div>
 
           <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-when-you-pass-7">
@@ -249,9 +243,7 @@
         </li>
       </ol>
     </div>
-<div class="govuk-inset-text">
-  Your permit is now active and you can perform the restricted activity within the limits set.
-</div>
+
   </div>
 </div>
 
