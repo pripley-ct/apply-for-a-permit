@@ -14,6 +14,118 @@ Arco Generators Ltd
 
 {% block content %}
 
+<div class="govuk-form-group">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+    <h1 class="govuk-heading-l">
+      My applications
+    </h1>
+<p>View the status of your permit applications. Select 'view' to see the progress step by step.</p>
+
+
+    <div class="govuk-form-group">
+      <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="event-name">
+          Search for an application
+        </label>
+      </h1>
+      <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
+      <a class="govuk-button" href="permit-tracker2">Search</a>
+    </div>
+
+
+  </div>
+</div>
+
+<details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Status key
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+		<table class="govuk-table">
+		  <thead class="govuk-table__head">
+		    <tr class="govuk-table__row">
+		      <th class="govuk-table__header" scope="col"></th>
+		      <th class="govuk-table__header" scope="col"></th>
+		    </tr>
+		  </thead>
+		  <tbody class="govuk-table__body"> 
+		    <tr class="govuk-table__row">
+		      <th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--grey">draft</strong></th>
+		      <td class="govuk-table__cell">An application that has been drafted</td>
+		    </tr>
+	    <tr class="govuk-table__row">
+	      <th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--blue">queued</strong></th>
+	      <td class="govuk-table__cell">An application that has been submitted and in the queue to be assessed</td>
+	    </tr>     
+        <tr class="govuk-table__row">
+		      <th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--yellow">In progress</strong></th>
+		      <td class="govuk-table__cell">An application that has been opened and is being reviewed by an officer</td>
+		    </tr>
+		    <tr class="govuk-table__row">
+		      <th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--turquoise">approved</strong></th>
+		      <td class="govuk-table__cell">An application that has been approved</td>
+		    </tr>
+        <tr class="govuk-table__row">
+		      <th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--red">rejected</strong></th>
+		      <td class="govuk-table__cell">An application has been rejected</td>
+		    </tr>
+      </tbody>
+		</table>
+  </div>
+</details>
+
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header app-custom-class" scope="col">Application</th>
+      <th class="govuk-table__header app-custom-class" scope="col">Submitted on</th>			
+      <th class="govuk-table__header app-custom-class" scope="col">Site</th>
+			<th class="govuk-table__header app-custom-class" scope="col">Activity type</th>
+      <th class="govuk-table__header app-custom-class" scope="col">Status</th>
+      <th class="govuk-table__header app-custom-class" scope="col"></th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <colgroup>
+        <col span="" class="name">
+        <col>
+        <col span="" class="subject">
+    </colgroup>
+
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">APP543XP</th>
+      <td class="govuk-table__cell">1 July 2022</td>			
+      <td class="govuk-table__cell">Liverpool</td>
+      <td class="govuk-table__cell">Stationary Medium Combustion Plant</td>		
+			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">queued</strong></td>
+      <td class="govuk-table__cell"><a href="permit-tracker2" class="govuk-link">View</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">APP392TR</th>
+      <td class="govuk-table__cell">N/A</td>				
+      <td class="govuk-table__cell">Warrington</td>
+      <td class="govuk-table__cell">Incineration of non-hazardous waste</td>			
+			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">draft</strong></td>			
+      <td class="govuk-table__cell"><a href="permit-tracker2" class="govuk-link">View</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">APP325RR</th>
+      <td class="govuk-table__cell">13 March 2022</td>				
+      <td class="govuk-table__cell">Bolton</td>
+      <td class="govuk-table__cell">Physical Treatment of hazardous waste</td>
+			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">rejected</strong></td>
+      <td class="govuk-table__cell"><a href="permit-tracker2" class="govuk-link">View</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
 
 <div class="govuk-form-group">
   <div class="govuk-grid-row">
@@ -23,9 +135,7 @@ Arco Generators Ltd
     <h1 class="govuk-heading-l">
       My permits 
     </h1>
-<p>View and manage your permits. You can can search by reference number or by entering a site location to show all permits in that area.</p>
-
-
+<p>View and manage your permits. You can can search by permit number or by entering a site location to show all permits in that area.</p>
 
     <div class="govuk-form-group">
       <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="event-name">
@@ -58,17 +168,9 @@ Arco Generators Ltd
 		      <th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--turquoise">active</strong></th>
 		      <td class="govuk-table__cell">An active permit</td>
 		    </tr>
-        <tr class="govuk-table__row">
-		      <th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--yellow">applied</strong></th>
-		      <td class="govuk-table__cell">A permit application that has been received and is being reviewed</td>
-		    </tr>
 		    <tr class="govuk-table__row">
 		      <th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--red">surrender</strong></th>
 		      <td class="govuk-table__cell">A permit that needs to be surrendered and requires your attention</td>
-		    </tr>
-		    <tr class="govuk-table__row">
-		      <th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--red">transferring</strong></th>
-		      <td class="govuk-table__cell">A permit that is in the process of being transferred to another entity</td>
 		    </tr>
         <tr class="govuk-table__row">
 		      <th class="govuk-table__header" scope="row"><strong class="govuk-tag govuk-tag--grey">expired</strong></th>
@@ -86,7 +188,7 @@ Arco Generators Ltd
       <th class="govuk-table__header app-custom-class" scope="col">Permit</th>
       <th class="govuk-table__header app-custom-class" scope="col">Site</th>
 			<th class="govuk-table__header app-custom-class" scope="col">Regulated activity</th>
-      <th class="govuk-table__header app-custom-class" scope="col">Expiry</th>
+      <th class="govuk-table__header app-custom-class" scope="col">Surrender by</th>
       <th class="govuk-table__header app-custom-class" scope="col">Status</th>
       <th class="govuk-table__header app-custom-class" scope="col"></th>
     </tr>
@@ -101,23 +203,23 @@ Arco Generators Ltd
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">SP3801PK</th>
       <td class="govuk-table__cell">Bury generator 4</td>
-      <td class="govuk-table__cell">Environmental Permitting Regulation</td>
+      <td class="govuk-table__cell">Household, Commercial & Industrial Waste Transfer Station</td>
       <td class="govuk-table__cell">11 July 2022</td>			
-			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">transferring</strong></td>
-      <td class="govuk-table__cell"><a href="permit-mcp-2warnings.html" class="govuk-link">View</a></td>
+			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">surrender</strong></td>
+      <td class="govuk-table__cell"><a href="permit-mcp.html" class="govuk-link">View</a></td>
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">GR4392TR</th>
       <td class="govuk-table__cell">Warrington</td>
-      <td class="govuk-table__cell">Waste operation</td>			
+      <td class="govuk-table__cell">Medium Combustion Plant</td>			
       <td class="govuk-table__cell">N/A</td>
-			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">applied</strong></td>			
+			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--turquoise">active</strong></td>			
       <td class="govuk-table__cell"><a href=" #" class="govuk-link">View</a></td>
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">BT8325RR</th>
       <td class="govuk-table__cell">Warrington</td>
-      <td class="govuk-table__cell">Waste operation</td>
+      <td class="govuk-table__cell">Stationary Medium Combustion Plant</td>
       <td class="govuk-table__cell">N/A</td>
 			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--turquoise">active</strong></td>
       <td class="govuk-table__cell"><a href=" #" class="govuk-link">View</a></td>
@@ -125,7 +227,7 @@ Arco Generators Ltd
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">KE3321NE</th>
       <td class="govuk-table__cell">Warrington</td>
-      <td class="govuk-table__cell">Installation</td>
+      <td class="govuk-table__cell">Incineration of non-hazardous waste</td>
       <td class="govuk-table__cell">1 November 2025</td>
 			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--turquoise">active</strong></td>			
       <td class="govuk-table__cell"><a href=" #" class="govuk-link">View</a></td>
@@ -133,7 +235,7 @@ Arco Generators Ltd
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">GR4395ZW</th>
       <td class="govuk-table__cell">Warrington</td>
-      <td class="govuk-table__cell">Waste operation</td>			
+      <td class="govuk-table__cell">Physical Treatment of hazardous waste</td>			
       <td class="govuk-table__cell">12 July 2027</td>
 			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--turquoise">active</strong></td>			
       <td class="govuk-table__cell"><a href=" #" class="govuk-link">View</a></td>
@@ -141,7 +243,7 @@ Arco Generators Ltd
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">BT83263YE</th>
       <td class="govuk-table__cell">Liverpool</td>
-      <td class="govuk-table__cell">Waste operation</td>
+      <td class="govuk-table__cell">Incineration of non-hazardous waste</td>
       <td class="govuk-table__cell">N/A</td>
 			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--turquoise">active</strong></td>
       <td class="govuk-table__cell"><a href=" #" class="govuk-link">View</a></td>
@@ -149,7 +251,7 @@ Arco Generators Ltd
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">KE3325MM</th>
       <td class="govuk-table__cell">Salford</td>
-      <td class="govuk-table__cell">Installation</td>
+      <td class="govuk-table__cell">Physical Treatment of hazardous waste</td>
       <td class="govuk-table__cell">14 August 2029</td>
 			<td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--turquoise">active</strong></td>			
       <td class="govuk-table__cell"><a href=" #" class="govuk-link">View</a></td>
@@ -172,6 +274,8 @@ Arco Generators Ltd
     </tr>
   </tbody>
 </table>
+
+
 
 <p><a href="">1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">2</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">3</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">4</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">5</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <br>

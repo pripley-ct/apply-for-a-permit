@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+{% import "sections.html" as s %}
+
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+
+
+<a class="govuk-back-link" href="#" onclick="history.back(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row" id="arco-dashboard">
+	<div class="govuk-grid-column-two-thirds">
+	  <h1 class="govuk-heading-l">
+		 Choose how to pay for your application
+	  </h1>
+  
+	<div class="govuk-inset-text">
+	  <p class="govuk-body govuk-!-font-size-36">Amount due: £3100.00</p>
+	</div>
+	
+<p>Select a payment method. You can enter the details on the next screen.  </p>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          BACS
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+          Credit card
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          Cheque
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+          IBAN
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-5" name="where-do-you-live" type="radio" value="northern-ireland2">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-5">
+          Purchase Order 
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+
+
+		<div class="govuk-button-group">
+		<a class="govuk-button" data-module="govuk-button" href="payments">Continue</a>
+			</div>
+
+
+		
+	  
+	</div>
+  </div>
+{% endblock %}
