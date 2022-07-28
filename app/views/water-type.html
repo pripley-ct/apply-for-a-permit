@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+{% import "sections.html" as s %}
+
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+
+
+<a class="govuk-back-link" href="#" onclick="history.back(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row" id="arco-dashboard">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">
+		Tell us the type of applicant
+    </h1>
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+        <label class="govuk-label govuk-radios__label" for="sign-in">
+          Other
+        </label>
+        <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+          Any other business or person
+        </div>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+        <label class="govuk-label govuk-radios__label" for="sign-in-2">
+          Water company
+        </label>
+        <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+          If you are a water undertaker that is regulated by Ofwat
+        </div>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="sign-in-3" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+        <label class="govuk-label govuk-radios__label" for="sign-in-3">
+          Canal & River Trust
+        </label>
+        <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+          For the Canal & River Trust only
+        </div>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+	  <a class="govuk-button" data-module="govuk-button" href="water-purpose">Continue</a>
+		
+{% endblock %}

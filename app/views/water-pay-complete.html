@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% import "sections.html" as s %}
+
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+
+
+<a class="govuk-back-link" href="#" onclick="history.back(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row" id="arco-dashboard">
+  <div class="govuk-grid-column-two-thirds">
+
+
+<div class="govuk-panel govuk-panel--confirmation">
+  <h1 class="govuk-panel__title">
+    Payment complete
+  </h1>
+  <div class="govuk-panel__body">
+    Your reference number<br><strong>HDJ2123F</strong>
+  </div>
+</div>
+<br>
+<p class="govuk-body"> <a href="#" class="govuk-link">Download a copy of your receipt</a>.</p>
+<br>
+  </div>
+</div>
+
+
+
+
+	  <a class="govuk-button" data-module="govuk-button" href="">Return to homepage</a>
+		
+{% endblock %}

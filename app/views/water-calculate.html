@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% import "sections.html" as s %}
+
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+
+
+<a class="govuk-back-link" href="#" onclick="history.back(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row" id="arco-dashboard">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">
+		Cost calculations
+    </h1>
+
+
+<p>Based on the answers you have provided we have worked out the cost so far for United Utilities Ltd:</p>
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Charge category description</th>
+      <th scope="col" class="govuk-table__header">Cost</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+			<td class="govuk-table__cell">  Medium loss, non tidal abstraction of up to and including 25 megalitres a year, no water 
+				availability charge, no modelling charge, no supported source charge.</td>
+      <th scope="row" class="govuk-table__header">£97</th>
+    </tr>
+    <tr class="govuk-table__row">
+			<td class="govuk-table__cell">High loss, tidal abstraction of up to and including 100 megalitres a year, no water 
+				availability charge, no modelling charge, no supported source charge.</td>
+      <th scope="row" class="govuk-table__header">£500</th>
+    </tr>
+    <tr class="govuk-table__row">
+			<td class="govuk-table__cell"></td>
+      <th scope="row" class="govuk-table__header">Total £597</th>
+    </tr>
+  </tbody>
+</table>
+
+
+  </div>
+</div>
+
+
+
+
+	  <a class="govuk-button" data-module="govuk-button" href="water-add-purpose">Continue</a>
+		
+{% endblock %}

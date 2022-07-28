@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% import "sections.html" as s %}
+
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+
+
+<a class="govuk-back-link" href="#" onclick="history.back(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row" id="arco-dashboard">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">
+		Water Resources Calculator
+    </h1>
+
+<p>Use this service to work out the availability, resource and cost of water extraction for your needs.
+<br>
+<br>
+ 
+	
+  </div>
+</div>
+
+	  <a class="govuk-button" data-module="govuk-button" href="water-name">Continue</a>
+		
+{% endblock %}

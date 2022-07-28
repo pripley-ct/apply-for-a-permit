@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% import "sections.html" as s %}
+
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+
+
+<a class="govuk-back-link" href="#" onclick="history.back(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row" id="arco-dashboard">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">
+		Tell us the name of the individual or company
+    </h1>
+
+<p>Enter the full name below. 	<p>If you are searching for a company name see <a href="https://www.gov.uk/get-information-about-a-company" class="govuk-link">Companies House</a>.</p>
+<br>
+<div class="govuk-form-group">
+  <label class="govuk-label" for="full-name">
+    Full name
+  </label>
+  <input class="govuk-input" id="full-name" name="full-name" type="text" spellcheck="false" autocomplete="name">
+</div>
+	<br>
+  </div>
+</div>
+
+
+
+
+	  <a class="govuk-button" data-module="govuk-button" href="water-abstract">Continue</a>
+		
+{% endblock %}
